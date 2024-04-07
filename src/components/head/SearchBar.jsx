@@ -17,14 +17,6 @@ const SearchInput = styled(TextField)({
   flex: 1,
   backgroundColor: "white", 
   borderRadius: "20px", 
-  "& .MuiOutlinedInput-root": {
-    paddingRight: "40px", 
-  },
-});
-
-const SearchButton = styled(IconButton)({
-  position: "absolute",
-  right: "8px", 
 });
 
 const SearchBar = ({ setSearchQuery }) => {
@@ -39,9 +31,7 @@ const SearchBar = ({ setSearchQuery }) => {
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
-              <SearchButton type="submit" aria-label="search">
-                <SearchIcon />
-              </SearchButton>
+              <SearchIcon />
             </InputAdornment>
           ),
         }}
