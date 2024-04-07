@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -47,22 +46,4 @@ export default function SelectLabels() {
       </FormControl>
     </div>
   );
-=======
-import { FormControl, MenuItem, Select } from "@mui/material";
-
-
-const SearchList = () => {
-
-
-    return (
-        <FormControl sx={{Width:"140px"}}>
-            <Select displayEmpty value={"categorias"} onChange={(e)=> e.target.value} >
-                <MenuItem value="">
-                    Seleccionar
-                </MenuItem>
-                <MenuItem>aasdasds</MenuItem>
-            </Select>
-        </FormControl>
-    );
->>>>>>> origin/main
 }
