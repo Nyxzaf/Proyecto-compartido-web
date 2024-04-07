@@ -6,7 +6,7 @@ const Header = () => {
   return (
       <AppBar>
         <FirstLane/>
-        <SecondLane/>
+        <SecondLane/> 
       </AppBar>
   );
 };

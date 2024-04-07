@@ -1,5 +1,6 @@
 import { Grid, Stack } from "@mui/material"
 import Logo from "../svg/LogoPlazaVea.svg";
+import SearchBar from "./SearchBar";
 
 
 const SecondLane = () => {
@@ -10,7 +11,7 @@ const SecondLane = () => {
           <img src={Logo}/>
         </Grid>
         <Grid item pl={5}>
-          asdsad
+        <SearchBar /> {}
         </Grid>
       </Grid>
     </Stack>
