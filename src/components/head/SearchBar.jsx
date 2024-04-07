@@ -4,27 +4,27 @@ import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled } from "@mui/system";
 
-// Estilos personalizados
+
 const SearchForm = styled("form")({
   display: "flex",
   alignItems: "center",
-  borderRadius: "20px", // Bordes circulares
-  padding: "8px", // Espacio interno
-  justifyContent: "flex-end", // Alinea los elementos hacia la derecha
+  borderRadius: "20px", 
+  padding: "8px", 
+  justifyContent: "flex-end", 
 });
 
 const SearchInput = styled(TextField)({
   flex: 1,
-  backgroundColor: "white", // Fondo blanco solo para el campo de entrada
-  borderRadius: "20px", // Bordes circulares
+  backgroundColor: "white", 
+  borderRadius: "20px", 
   "& .MuiOutlinedInput-root": {
-    paddingRight: "40px", // Espacio para el icono de búsqueda
+    paddingRight: "40px", 
   },
 });
 
 const SearchButton = styled(IconButton)({
   position: "absolute",
-  right: "8px", // Alinea el botón a la derecha
+  right: "8px", 
 });
 
 const SearchBar = ({ setSearchQuery }) => {
