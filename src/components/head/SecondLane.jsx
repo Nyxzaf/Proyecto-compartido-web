@@ -1,16 +1,18 @@
-import { Card, CardMedia, Stack } from '@mui/material'
+import { Card, CardMedia, Stack, Avatar } from '@mui/material'
 import React from 'react'
-/*import Photo from '.'*/
+import Photo from '../svg/plazavea.svg'
+import { red } from '@mui/material/colors'
+
 
 const SecondLane = () => {
   return (
     <div>
       <Stack style={{background:"red"}}>
-      {/* <img
+      <Avatar
         src={Photo}
         alt="Imagen de ejemplo"
-        style={{ float: 'left', marginRight: '10px' }}
-      /> */}
+        sx={{ width: 40, height: 40 }}
+      />
       </Stack>
     </div>
   )
