@@ -40,7 +40,7 @@ export default function SelectLabels() {
           <MenuItem value={80}>Frutas y Verduras</MenuItem>
           <MenuItem value={90}>Decohogar</MenuItem>
           <MenuItem value={100}>Mejoramiento del Hogar</MenuItem>
-          <MenuItem value={110}>Congelados</MenuItem>
+          <MenuItem value={110}>Congelados1</MenuItem>
           <MenuItem value={120}>Quesos y Fiambres</MenuItem>
         </Select>
       </FormControl>
