@@ -1,26 +1,16 @@
 import { Grid, Stack } from "@mui/material"
+import Logo from "../svg/LogoPlazaVea.svg";
+
 
 const SecondLane = () => {
   return (
     <Stack bgcolor="#CB4335" alignItems="center">
-      <Grid container justifyContent="space-between" alignItems="center">
-        <Grid item>
-            sadadasdsd
+      <Grid container alignItems="center" justifyContent="flex-start">
+        <Grid item p={1}>
+          <img src={Logo}/>
         </Grid>
-        <Grid item>
-            sadadasdsd
-        </Grid>
-        <Grid item>
-            sadadasdsd
-        </Grid>
-        <Grid item>
-            sadadasdsd
-        </Grid>
-        <Grid item>
-            sadadasdsd
-        </Grid>
-        <Grid item>
-            sadadasdsd
+        <Grid item pl={5}>
+          asdsad
         </Grid>
       </Grid>
     </Stack>
