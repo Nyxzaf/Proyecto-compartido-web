@@ -6,11 +6,11 @@ const SearchList = () => {
 
 
     return (
-        <Stack width={150} height={50} bgcolor={'white'} borderRadius="90px">
+        <Stack width={300} p={1} height={40} bgcolor={'white'} borderRadius="10px" boxShadow={1} direction={"row"} alignItems={"center"}>
             <Autocomplete
                 sx={{borderRadius:"10px"}}
                 options={ListCategory}
-                renderInput={(e)=> <TextField  {...e} />}
+                renderInput={(e)=> <TextField  {...e} variant='standard' fullWidth={true} />}
             />  
         </Stack>
     );
