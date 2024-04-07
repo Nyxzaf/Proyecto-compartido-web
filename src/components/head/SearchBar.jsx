@@ -1,8 +1,9 @@
-import React from "react";
+
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled } from "@mui/system";
+import PropTypes from 'prop-types'
 
 
 const SearchForm = styled("form")({
@@ -39,5 +40,13 @@ const SearchBar = ({ setSearchQuery }) => {
     </SearchForm>
   );
 };
+
+
+SearchBar.propTypes = {
+  setSearchQuery:PropTypes.func.isRequired
+}
+
+
+
 
 export default SearchBar;
