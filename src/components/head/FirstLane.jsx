@@ -22,15 +22,15 @@ const FirstLane = () => {
             Electro y Hogar
             </Grid>
         </Grid>
-        <Grid container justifyContent="flex-end" spacing={2} pr={1} color="#e3bebf" fontFamily="rubik "  fontSize={14}>
-          <Grid item component="a" color="#e3bebf" href="https://app.agora.pe/">Agora</Grid>
-          <Grid item>Financier Oh!</Grid>
-          <Grid item>Inkafarma</Grid>
-          <Grid item>Mifarma</Grid>
-          <Grid item>Oeshle</Grid>
-          <Grid item>Promart</Grid>
-          <Grid item>Real Plaza</Grid>
-          <Grid item>Vivanda</Grid>
+        <Grid container justifyContent="flex-end" spacing={2} pr={1} fontFamily="rubik "  fontSize={14}>
+          <Grid item component="a" color="#e3bebf" href="#" sx={{textDecoration:"none"}}>Agora</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Financier Oh!</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Inkafarma</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Mifarma</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Oeshle</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Promart</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Real Plaza</Grid>
+          <Grid item component="a" color="#e3bebf" href="#"sx={{textDecoration:"none"}}>Vivanda</Grid>
         </Grid>
       </Stack>
     </div>
