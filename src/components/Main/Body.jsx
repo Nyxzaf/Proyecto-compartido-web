@@ -3,7 +3,7 @@ import Carousel from "./Carousel.jsx";
 
 const Body = () => {
   return (
-      <Box sx={{ marginTop: "120px" }}>
+      <Box sx={{ marginTop: "100px" }}>
         <Carousel />
       </Box>
   );

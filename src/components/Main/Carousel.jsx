@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Grid, IconButton, Stack, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
@@ -30,25 +30,40 @@ const Carousel = () => {
 
   return (
     <Stack spacing={1} alignItems="center" bgcolor="white">
-      <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={3} textAlign="center">
-          <IconButton onClick={prevImage}>
-            <KeyboardArrowLeftIcon />
-          </IconButton>
-        </Grid>
-        <Grid item xs={6} textAlign="center">
-          <img 
-            src={images[currentImageIndex]} 
-            alt={`Image ${currentImageIndex + 1}`} 
-            style={{ maxWidth: '100%' }} 
+      <Stack direction="row" spacing={-5} alignItems="center">
+        <IconButton
+          sx={{
+            backgroundColor: "Black",
+            color: "White",
+            "&:hover": {
+              transform: "scale(1.2)",
+            
+            },
+          }}
+          onClick={prevImage}
+        >
+          <KeyboardArrowLeftIcon />
+        </IconButton>
+        <Box maxWidth="100%">
+          <img
+            src={images[currentImageIndex]}
+            alt={`Image ${currentImageIndex + 1}`}
+            style={{ width: "100%" }}
           />
-        </Grid>
-        <Grid item xs={3} textAlign="center">
-          <IconButton onClick={nextImage}>
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </Grid>
-      </Grid>
+        </Box>
+        <IconButton
+          sx={{
+            backgroundColor: "Black",
+            color: "White",
+            "&:hover": {
+              transform: "scale(1.2)",
+            },
+          }}
+          onClick={nextImage}
+        >
+          <KeyboardArrowRightIcon />
+        </IconButton>
+      </Stack>
       <Stack direction="row" spacing={1}>
         {images.map((_, index) => (
           <Typography
@@ -57,7 +72,7 @@ const Carousel = () => {
             style={{
               fontSize: "1.5rem",
               cursor: "pointer",
-              color: index === currentImageIndex ? "red" : "grey"
+              color: index === currentImageIndex ? "red" : "grey",
             }}
             onClick={() => setCurrentImageIndex(index)}
           >
