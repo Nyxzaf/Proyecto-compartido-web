@@ -4,7 +4,6 @@ import SelectionList from "../head/SelectionList";
 import SearchList from "./SearchList";
 import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
 import PersonIcon from '@mui/icons-material/Person';
-import IconButton from "@mui/material/IconButton";
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
@@ -32,15 +31,13 @@ const SecondLane = () => {
         <Grid item ml={8} alignItems={"center"}>
           <Stack direction={"row"} fontFamily={"rubik"}>
             <PersonIcon sx={{mr:1}}  />
-            Mis pedidos
+            Mi cuenta
           </Stack>
         </Grid>
         <Grid item ml={5}>
-            <IconButton IconButton aria-label="cart">
               <Badge badgeContent={1} color="secondary">
               <ShoppingCartIcon sx={{fontSize:30}}/>
             </Badge>
-          </IconButton>
         </Grid>
       </Grid>
     </Stack>

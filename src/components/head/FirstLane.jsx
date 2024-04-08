@@ -12,11 +12,11 @@ const FirstLane = () => {
           ml={2}
           spacing={2}
         >
-          <Grid item display="flex" alignItems="center" >
+          <Grid item component="a" href="/#" display="flex" alignItems="center" sx={{textDecoration:"none", color:"#e3bebf"}} >
             <ShoppingBasketIcon sx={{margin:1}} />
             Supermercado
           </Grid>
-          <Grid item display="flex" alignItems="center">
+          <Grid item component="a" href="/#" display="flex" alignItems="center" sx={{textDecoration:"none", color:"#e3bebf"}}>
             <DinnerDiningIcon sx={{margin:1}}/>
             Electro y Hogar
             </Grid>

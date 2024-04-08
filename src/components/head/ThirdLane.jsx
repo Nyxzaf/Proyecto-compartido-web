@@ -1,15 +1,17 @@
-import { Grid, Stack } from "@mui/material";
+import { Grid , Stack } from "@mui/material";
 import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
 import SendIcon from '@mui/icons-material/Send';
 import AddCardIcon from '@mui/icons-material/AddCard';
+import DrawerNavigation from "./DrawerNavigation";
+
 
 const ThirdLane = () => {
     return (
         <Stack direction="row" alignItems="center" bgcolor="#CB4335">
-            <Grid item xs direction={"row"}>
-                <Grid container justifyContent="flex-start">
-                    <Grid item p={2}>
-                        compra de categorias
+            <Grid item xs >
+                <Grid container direction={"row"} justifyContent="flex-start">
+                    <Grid item p={1}>
+                        <DrawerNavigation/>
                     </Grid>
                 </Grid>
             </Grid>
