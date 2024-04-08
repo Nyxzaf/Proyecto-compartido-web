@@ -16,7 +16,7 @@ const ThirdLane = () => {
             <Grid item xs={8} container justifyContent="flex-end">
                 <Grid item p={1} display="flex">
                     <AddCardIcon/>
-                    Tarjeta OH!
+                    Tarjeta Oh!
                 </Grid>
                 <Grid item p={1} display="flex">
                     <AirplanemodeActiveIcon/>
