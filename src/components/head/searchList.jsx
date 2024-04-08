@@ -16,7 +16,7 @@ const SearchList = () => {
 
     return (
         <Stack 
-            width={500} 
+            width={850} 
             height={40} 
             bgcolor={'white'} 
             borderRadius="0px 50px 50px 0px" 

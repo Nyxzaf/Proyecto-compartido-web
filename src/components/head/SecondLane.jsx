@@ -24,16 +24,16 @@ const SecondLane = () => {
         <Grid item>
           <SearchList/>
         </Grid>
-        <Grid item pl={18} pr={7} alignItems={"center"} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
+        <Grid item ml={12} pl={18} pr={7} alignItems={"center"} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
           <Stack direction={"row"} fontFamily={"rubik"}>
             <IndeterminateCheckBoxIcon sx={{mr:1}}/>
             Mis pedidos
           </Stack>
         </Grid>
-        <Grid item ml={1} pr={5} alignItems={"center"}>
+        <Grid item ml={-2} pr={5} alignItems={"center"} >
           <UserOptions/>
         </Grid>
-        <Grid item ml={5} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
+        <Grid item ml={1} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
               <Badge badgeContent={100} color="secondary">
               <ShoppingCartIcon sx={{fontSize:30}}/>
             </Badge>
