@@ -12,7 +12,6 @@ export default function SelectionList() {
   };
 
   return (
-    <div>
       <FormControl sx={{ m: 1, minWidth: 230}}>
         <Select
           sx={{borderRadius:"50px 0px 0px 50px", background:"white", height:"40px" , fontFamily:"sans-serif" ,}}
@@ -44,6 +43,5 @@ export default function SelectionList() {
           <MenuItem value={11}>Quesos y Fiambres</MenuItem>
         </Select>
       </FormControl>
-    </div>
   );
 }

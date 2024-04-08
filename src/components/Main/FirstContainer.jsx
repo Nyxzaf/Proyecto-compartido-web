@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent, Grid, Typography, Button, Container } from "@mui/material";
 
 const FirstContainer = () => {
