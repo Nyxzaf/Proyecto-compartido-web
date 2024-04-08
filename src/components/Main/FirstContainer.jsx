@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Grid, Typography, Button } from "@mui/material";
+import { Card, CardContent, Grid, Typography, Button, Container } from "@mui/material";
 
 const FirstContainer = () => {
   // Lista de URLs de imágenes para cada tarjeta
@@ -18,6 +18,7 @@ const FirstContainer = () => {
   ];
 
   return (
+    <Container>
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Card sx={{ bgcolor: "#EBEBEB" }}>
@@ -88,6 +89,7 @@ const FirstContainer = () => {
         </Card>
       </Grid>
     </Grid>
+    </Container>
   );
 };
 
