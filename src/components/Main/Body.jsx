@@ -1,10 +1,10 @@
-import { AppBar, Box, Stack } from "@mui/material";
-import Section from "./Section.jsx"
+import { Box } from "@mui/material";
+import Carousel from "./Carousel.jsx";
 
 const Body = () => {
   return (
-      <Box>
-        <Section />
+      <Box sx={{ marginTop: "120px" }}>
+        <Carousel />
       </Box>
   );
 };
