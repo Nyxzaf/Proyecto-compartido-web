@@ -35,10 +35,10 @@ const SecondLane = () => {
             Mis pedidos
           </Stack>
         </Grid>
-        <Grid item ml={8}>
+        <Grid item ml={5}>
             <IconButton IconButton aria-label="cart">
               <Badge badgeContent={1} color="secondary">
-              <ShoppingCartIcon />
+              <ShoppingCartIcon sx={{fontSize:30}}/>
             </Badge>
           </IconButton>
         </Grid>

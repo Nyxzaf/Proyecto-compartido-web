@@ -29,7 +29,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <Stack spacing={1} alignItems="center" bgcolor="white">
+    <Stack spacing={2} alignItems="center" bgcolor="white">
       <Stack direction="row" spacing={-5} alignItems="center">
         <IconButton
           sx={{

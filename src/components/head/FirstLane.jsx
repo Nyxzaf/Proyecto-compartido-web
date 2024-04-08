@@ -15,7 +15,7 @@ const FirstLane = () => {
           <Grid item display="flex" alignItems="center" >
             <ShoppingBasketIcon sx={{margin:1}} />
             Supermercado
-            </Grid>
+          </Grid>
           <Grid item display="flex" alignItems="center">
             <DinnerDiningIcon sx={{margin:1}}/>
             Electro y Hogar

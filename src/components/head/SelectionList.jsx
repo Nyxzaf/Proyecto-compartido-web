@@ -19,13 +19,6 @@ export default function SelectionList() {
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Typos de categorias' }}
-          MenuProps={{
-            PaperProps: {
-              style: {
-                maxHeight: 300,
-              },  
-            },
-          }}
         >
           <MenuItem value="" sx={{ minHeight: '40px' }}>
             <em>Todas las Categorias</em>
@@ -39,7 +32,7 @@ export default function SelectionList() {
           <MenuItem value={7}>Frutas y Verduras</MenuItem>
           <MenuItem value={8}>Decohogar</MenuItem>
           <MenuItem value={9}>Mejoramiento del Hogar</MenuItem>
-          <MenuItem value={10}>Congelados1</MenuItem>
+          <MenuItem value={10}>Congelados</MenuItem>
           <MenuItem value={11}>Quesos y Fiambres</MenuItem>
         </Select>
       </FormControl>
