@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -23,7 +23,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage();
-    }, 10000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
