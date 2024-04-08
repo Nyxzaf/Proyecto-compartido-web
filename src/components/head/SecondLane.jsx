@@ -3,9 +3,9 @@ import Logo from "../svg/LogoPlazaVea.svg";
 import SelectionList from "../head/SelectionList";
 import SearchList from "./SearchList";
 import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
-import PersonIcon from '@mui/icons-material/Person';
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import UserOptions from "./UserOptions";
 
 
 
@@ -14,7 +14,9 @@ const SecondLane = () => {
     <Stack bgcolor="#CB4335" alignItems="center">
       <Grid container alignItems="center" justifyContent="flex-start">
         <Grid item p={1} pl={4}>
-          <img src={Logo}/>
+          <a href="#">
+            <img  src={Logo}/>
+          </a>
         </Grid>
         <Grid item pl={5}>
           <SelectionList/>
@@ -22,20 +24,17 @@ const SecondLane = () => {
         <Grid item>
           <SearchList/>
         </Grid>
-        <Grid item pl={18} alignItems={"center"}>
+        <Grid item pl={18} pr={7} alignItems={"center"} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
           <Stack direction={"row"} fontFamily={"rubik"}>
             <IndeterminateCheckBoxIcon sx={{mr:1}}/>
             Mis pedidos
           </Stack>
         </Grid>
-        <Grid item ml={8} alignItems={"center"}>
-          <Stack direction={"row"} fontFamily={"rubik"}>
-            <PersonIcon sx={{mr:1}}  />
-            Mi cuenta
-          </Stack>
+        <Grid item ml={1} pr={5} alignItems={"center"}>
+          <UserOptions/>
         </Grid>
-        <Grid item ml={5}>
-              <Badge badgeContent={1} color="secondary">
+        <Grid item ml={5} href="#" component="a" sx={{textDecoration:"none", color:"white"}}>
+              <Badge badgeContent={100} color="secondary">
               <ShoppingCartIcon sx={{fontSize:30}}/>
             </Badge>
         </Grid>

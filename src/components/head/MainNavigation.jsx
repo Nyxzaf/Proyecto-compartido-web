@@ -1,7 +1,7 @@
 import { Box , IconButton , Menu, MenuItem } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
-const DrawerNavigation = () => {
+const MainNavigation = () => {
 
     const [Open, setOpen] = useState(false);
 
@@ -12,8 +12,8 @@ const DrawerNavigation = () => {
     return (
         // onClick={()=>setOpen(!Open)}
         <Box>
-            <IconButton onClick={()=>setOpen(!Open)} id="icon-menu" display={"flex"} sx={{fontFamily:"rubik" , borderRadius:"0px"}}><MenuIcon/>Compra por categorias</IconButton>
-            <Menu  open={Open} onClose={()=>setOpen(!Open)} sx={{}}>
+            <IconButton onClick={()=>setOpen(!Open)} id="icon-menu" display={"flex"} sx={{fontFamily:"rubik" , borderRadius:"0px", color:"white"}} ><MenuIcon/>Compra por categorias</IconButton>
+            <Menu  open={Open} onClose={()=>setOpen(!Open)}>
                 {
                     Category.map((item,index)=>
                 (
@@ -27,4 +27,4 @@ const DrawerNavigation = () => {
     );
 }
 
-export default DrawerNavigation;
+export default MainNavigation;
