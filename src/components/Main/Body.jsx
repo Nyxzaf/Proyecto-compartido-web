@@ -4,7 +4,7 @@ import FirstContainer from "./FirstContainer.jsx";
 
 const Body = () => {
   return (
-      <Box sx={{ marginTop: "155px" }}>
+      <Box sx={{ marginTop: "159px" }}>
         <Carousel />
         <Box sx={{marginTop:"10px"}}>
             <FirstContainer/>

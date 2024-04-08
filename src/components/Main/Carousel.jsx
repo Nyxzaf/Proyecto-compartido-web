@@ -7,7 +7,9 @@ const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     "src/components/svg/Imagen1.webp",
-    "src/components/svg/Imagen2.webp"
+    "src/components/svg/Imagen2.webp",
+    "src/components/svg/Imagen3.jpg",
+    "src/components/svg/Imagen4.webp"
   ];
 
   const nextImage = () => {
