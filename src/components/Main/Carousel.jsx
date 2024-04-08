@@ -39,7 +39,6 @@ const Carousel = () => {
             color: "White",
             "&:hover": {
               transform: "scale(1.2)",
-            
             },
           }}
           onClick={prevImage}
@@ -68,22 +67,22 @@ const Carousel = () => {
       </Stack>
       <Stack direction="row" spacing={1}>
         {images.map((_, index) => (
-          <Typography
-            key={index}
-            component="span"
-            style={{
-              fontSize: "1.5rem",
-              cursor: "pointer",
-              color: index === currentImageIndex ? "red" : "grey",
-            }}
-            onClick={() => setCurrentImageIndex(index)}
-          >
-            &bull;
-          </Typography>
+          <Box key={index} sx={{ padding: '0.1rem' }}>
+            <Typography
+              component="span"
+              style={{
+                fontSize: index === currentImageIndex ? "2.5rem" : "2.5rem",
+                cursor: "pointer",
+                color: index === currentImageIndex ? "red" : "grey",
+              }}
+              onClick={() => setCurrentImageIndex(index)}
+            >
+              &bull;
+            </Typography>
+          </Box>
         ))}
       </Stack>
     </Stack>
   );
 };
-
 export default Carousel;

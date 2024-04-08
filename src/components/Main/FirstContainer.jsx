@@ -27,6 +27,9 @@ const FirstContainer = () => {
             </Typography>
             <Typography variant="subtitle1" gutterBottom style={{ color: "#333" }}>
               Compra de todo a precios bajos. Entregas el mismo día.
+              <Button variant="contained" sx={{ bgcolor: "#757575", color: "white", mt: 2 }}>
+              Ingresar
+            </Button>
             </Typography>
             <Grid container spacing={2}>
               {supermarketImages.map((imageUrl, index) => (
@@ -47,9 +50,6 @@ const FirstContainer = () => {
                 </Grid>
               ))}
             </Grid>
-            <Button variant="contained" sx={{ bgcolor: "#757575", color: "white", mt: 2 }}>
-              Ingresar
-            </Button>
           </CardContent>
         </Card>
       </Grid>
@@ -60,7 +60,10 @@ const FirstContainer = () => {
               Electro, hogar y más
             </Typography>
             <Typography variant="subtitle1" gutterBottom style={{ color: "#333" }}>
-              Compra de todo a precios bajos. Entregas el mismo día.
+              Compra de todo a precios bajos. Entregas el mismo día. 
+              <Button variant="contained" sx={{ bgcolor: "#757575", color: "white", mt: 2 }}>
+              Ingresar
+              </Button>
             </Typography>
             <Grid container spacing={2}>
               {electroImages.map((imageUrl, index) => (
@@ -81,9 +84,6 @@ const FirstContainer = () => {
                 </Grid>
               ))}
             </Grid>
-            <Button variant="contained" sx={{ bgcolor: "#757575", color: "white", mt: 2 }}>
-              Ingresar
-            </Button>
           </CardContent>
         </Card>
       </Grid>
