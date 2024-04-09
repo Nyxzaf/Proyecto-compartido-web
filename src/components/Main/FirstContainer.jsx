@@ -1,6 +1,6 @@
 import { Card, CardContent, Grid, Typography, Button, Container } from "@mui/material";
 
-const FirstContainer = () => {
+const FirstContainer = () => { 
   // Lista de URLs de imágenes para cada tarjeta
   const supermarketImages = [
     "https://plazavea.vteximg.com.br/arquivos/HP-CATEGORIAS-PG-PESCADOS-ENERO-B.png",
