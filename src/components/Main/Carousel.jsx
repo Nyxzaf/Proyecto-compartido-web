@@ -29,7 +29,7 @@ const Carousel = () => {
 
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentImageIndex]);
 
   return (
     <Stack spacing={2} alignItems="center" bgcolor="white">
