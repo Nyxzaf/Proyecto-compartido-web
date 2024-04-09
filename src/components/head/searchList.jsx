@@ -15,20 +15,21 @@ const SearchList = () => {
     ];
 
     return (
-        <Stack 
-            width={850} 
+        <Stack
+            width={500}
             height={40} 
             bgcolor={'white'} 
             borderRadius="0px 50px 50px 0px" 
             sx={{
                 boxShadow: 'none',
-                alignItems: 'center'
+                alignItems: 'center',
             }}
         >
             <Autocomplete
                 options={ListCategory}
                 renderInput={(params) => (
-                    <TextField 
+                    <TextField
+                        sx={{flexGrow:1}} 
                         {...params}  
                         variant="filled"
                     />
