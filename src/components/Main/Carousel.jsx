@@ -6,10 +6,10 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    "public/Imagen1.webp",
-    "public/Imagen2.webp",
-    "public/Imagen3.jpg",
-    "public/Imagen4.webp"
+    "./Imagen1.webp",
+    "./Imagen2.webp",
+    "./Imagen3.jpg",
+    "./Imagen4.webp"
   ];
 
   const nextImage = () => {
