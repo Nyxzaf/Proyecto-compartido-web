@@ -4,6 +4,8 @@ import FirstContainer from "./FirstContainer.jsx";
 import SecondContainer from "./SecondContainer.jsx";
 import Thirdcontainer from "./ThirdContainer.jsx";
 import FourthContainer from "./FourthContainer.jsx";
+import FifthContainer from "./FifthContainer.jsx";
+import SixthContainer from "./SixthContainer.jsx";
 
 const Body = () => {
   return (
@@ -20,6 +22,12 @@ const Body = () => {
         </Box>
         <Box sx ={{marginTop:"-15px"}}>
             <FourthContainer/>
+        </Box>
+        <Box sx ={{marginTop:"-15px"}}>
+            <FifthContainer/>
+        </Box>
+        <Box sx ={{marginTop:"-15px"}}>
+            <SixthContainer/>
         </Box>
       </Box>
   );
