@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Carousel from "./Carousel.jsx";
 import FirstContainer from "./FirstContainer.jsx";
 import SecondContainer from "./SecondContainer.jsx";
+import Thirdcontainer from "./ThirdContainer.jsx";
 
 const Body = () => {
   return (
@@ -11,7 +12,10 @@ const Body = () => {
             <FirstContainer/>
         </Box>
         <Box sx ={{marginTop:"45px"}}>
-        <SecondContainer/>
+            <SecondContainer/>
+        </Box>
+        <Box sx ={{marginTop:"45px"}}>
+            <Thirdcontainer/>
         </Box>
       </Box>
   );
