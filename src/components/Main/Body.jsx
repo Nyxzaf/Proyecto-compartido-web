@@ -9,7 +9,7 @@ import SixthContainer from "./SixthContainer.jsx";
 
 const Body = () => {
   return (
-      <Box sx={{ marginTop: "159px" }}>
+      <Box sx={{ marginTop: "159px" }} >
         <Carousel />
         <Box sx={{marginTop:"10px"}}>
             <FirstContainer/>
