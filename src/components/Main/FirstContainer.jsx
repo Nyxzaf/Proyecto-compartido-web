@@ -22,11 +22,11 @@ const FirstContainer = () => {
         <Grid item xs={12} md={6}>
           <Card sx={{ bgcolor: "#EBEBEB",boxShadow: "10", paddingLeft: '20px', paddingRight: '20px', maxWidth: '600px', margin: 'auto' }}>
             <CardContent>
-              <Typography variant="h5" gutterBottom sx={{ color: "#343333", fontWeight: 'bold', fontSize: '2rem' }}>
+              <Typography variant="h5" component="h1"  sx={{ color: "#343333", fontWeight: 'bold', fontSize: '2rem' }}>
                 Supermercado
               </Typography>
               <div style={{ display: 'flex', alignItems: 'center' }}>
-                <Typography variant="subtitle1" gutterBottom sx={{ color: "#343333", marginRight: '10px', lineHeight: '1.4' }}>
+                <Typography variant="subtitle1"  sx={{ color: "#343333", marginRight: '10px', lineHeight: '1.4' }}>
                   Compra de todo a precios bajos. Entregas el mismo día.
                 </Typography>
                 <Button variant="contained" sx={{ bgcolor: "red", color: "white", borderRadius: "20px" }}>
@@ -59,12 +59,12 @@ const FirstContainer = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Card sx={{ bgcolor: "#EBEBEB", boxShadow: "10", paddingLeft: '10px', paddingRight: '1px', maxWidth: '700px', margin: 'auto', paddingBottom:"30px" }}>
-            <CardContent style={{ display: 'flex', alignItems: 'center' }}>
+            <CardContent sx={{ display: 'flex', alignItems: 'center' }}>
               <div style={{ flex: '1' }}>
-                <Typography variant="h5" gutterBottom sx={{ color: "#343333", fontWeight: 'bold', fontSize: '2rem'  }}>
+                <Typography variant="h4" component="h2"  sx={{ color: "#343333", fontWeight: 'bold', fontSize: '2rem'  }}>
                   Electro, hogar y más
                 </Typography>
-                <Typography variant="subtitle1" gutterBottom sx={{ color: "#343333", marginRight: '12px', lineHeight: '1.4' }}>
+                <Typography variant="subtitle2"  sx={{ color: "#343333", marginRight: '12px', lineHeight: '1.4' }}>
                   Lo último en tecnología, electrohogar, deportes, moda, infantil y más. Entregas desde 24 hrs.
                 </Typography>
               </div>
