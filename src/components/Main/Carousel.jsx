@@ -27,7 +27,6 @@ const Carousel = () => {
       nextImage();
     }, 8000);
 
-
     return () => clearInterval(interval);
   }, [currentImageIndex]);
 
