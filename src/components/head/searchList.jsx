@@ -16,8 +16,8 @@
 
         return (
             <Stack
-                width={{xl:550, lg:500,md:400,xs:200}} 
-                height={40} 
+                width={{xl:550, lg:400,md:350,xs:350}} 
+                height={39} 
                 bgcolor={'white'} 
                 borderRadius="0px 50px 50px 0px" 
                 sx={{
@@ -31,11 +31,13 @@
                         <TextField
                             {...params}  
                             variant="filled"
+                            sx={{alignContent:"center"}}
                             InputProps={{
                                 ...params.InputProps,
                                 sx:{
                                     height:"40px",
                                     borderRadius:"0px 50px 50px 0px ",
+                                    alignContent:"center"
                                 }
                             }}
                         />
