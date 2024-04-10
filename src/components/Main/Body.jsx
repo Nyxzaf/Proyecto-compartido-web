@@ -3,6 +3,7 @@ import Carousel from "./Carousel.jsx";
 import FirstContainer from "./FirstContainer.jsx";
 import SecondContainer from "./SecondContainer.jsx";
 import Thirdcontainer from "./ThirdContainer.jsx";
+import FourthContainer from "./FourthContainer.jsx";
 
 const Body = () => {
   return (
@@ -16,6 +17,9 @@ const Body = () => {
         </Box>
         <Box sx ={{marginTop:"45px"}}>
             <Thirdcontainer/>
+        </Box>
+        <Box sx ={{marginTop:"-15px"}}>
+            <FourthContainer/>
         </Box>
       </Box>
   );
