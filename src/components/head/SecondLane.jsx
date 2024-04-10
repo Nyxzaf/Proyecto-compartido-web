@@ -13,18 +13,18 @@ const SecondLane = () => {
   return (
     <Stack bgcolor="#CB4335" alignItems="center">
       <Grid container alignItems="center" justifyContent="flex-start">
-        <Grid item p={1} pl={4}>
+        <Grid item p={1} pl={4} display={{xs:"none",sm:"flex"}}>
           <a href="#">
             <img  src={Logo}/>
           </a>
         </Grid>
-        <Grid item pl={5}>
+        <Grid item pl={5} sx={{display:{md:"block",xs:"none"}}}>
           <SelectionList/>
         </Grid>
-        <Grid item>
+        <Grid item justifyContent={{xs:"center"}}>
           <SearchList/>
         </Grid>
-          <Grid item ml={10} pl={18} pr={7} alignItems={"center"} href="#" component="a"  sx={{textDecoration:"none", color:"white"}}>
+          <Grid item ml={12} pl={8} pr={7} alignItems={"center"} href="#" component="a"  sx={{textDecoration:"none", color:"white"}}>
             <Stack direction={"row"} fontFamily={"rubik"}>
               <IndeterminateCheckBoxIcon sx={{mr:1}}/>
               Mis pedidos
