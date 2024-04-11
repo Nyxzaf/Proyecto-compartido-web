@@ -5,6 +5,7 @@ const theme = createTheme({
     primary: {
       main: "#CB4335",
       dark: "#922B21",
+      card: "#EBEBEB",
     },
     secondary: {
       main: "#CB4335",

@@ -21,7 +21,7 @@ const SixthContainer = () => {
 
     return (
         <Container>
-            <Grid padding={3} variant="h5" gutterBottom sx={{ color: "#343333", fontWeight: 'bold', fontSize: '1.6rem' }}>
+            <Grid padding={3} variant="h5" sx={{ color: "#343333", fontWeight: 'bold', fontSize: '1.6rem' }}>
             Mejoramiento del Hogar
             </Grid>
             <Grid container spacing={1.5}>

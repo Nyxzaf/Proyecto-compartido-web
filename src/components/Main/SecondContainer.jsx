@@ -1,4 +1,4 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 const SecondContainer = () => {
   const supermarketImages = [
@@ -7,27 +7,16 @@ const SecondContainer = () => {
 
   return (
     <Container>
-      <Grid container spacing={2}>
-        {supermarketImages.map((imageUrl, index) => (
-          <Grid key={index} item xs={6} md={3}>
-            <div>
-              <div>
-                <div
-                  className="categories__item--shape categories__item--circular"
-                  style={{ height: "75px", width: "1160px" }}
-                >
-                  <img
-                    className="image__shape image__round"
-                    src={imageUrl}
-                    alt={`Image ${index + 1}`}
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </Grid>
-        ))}
-      </Grid>
+      {supermarketImages.map((imageUrl, index) => (
+        <Box key={index} component="figure">
+          <Box
+            component={"img"}
+            src={imageUrl}
+            alt={`Image ${index + 1}`}
+            sx={{ height: "auto", width: "100%" }}
+          />
+        </Box>
+      ))}
     </Container>
   );
 };
