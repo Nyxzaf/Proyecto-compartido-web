@@ -6,6 +6,8 @@ import Thirdcontainer from "./ThirdContainer.jsx";
 import FourthContainer from "./FourthContainer.jsx";
 import FifthContainer from "./FifthContainer.jsx";
 import SixthContainer from "./SixthContainer.jsx";
+import Raea from "./Raea.jsx";
+
 
 const Body = () => {
   return (
@@ -13,6 +15,7 @@ const Body = () => {
       <Carousel />
       <Container>
         <FirstContainer />
+        <Raea />
         <SecondContainer />
         <Thirdcontainer />
         <FourthContainer />
