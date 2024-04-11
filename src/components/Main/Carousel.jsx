@@ -2,12 +2,15 @@ import { useState, useEffect } from "react";
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Carousel = () => {
+  const matches = useMediaQuery("(max-width:600px)");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-    "./Imagen1.webp",
-    "./Imagen2.webp",
+  const images = ["./Imagen1.webp", "./Imagen2.webp"];
+  const imagesResponsive = [
+    "./ImagenResponsive1.webp",
+    "./ImagenResponsive2.webp",
   ];
 
   const nextImage = () => {
@@ -45,7 +48,7 @@ const Carousel = () => {
         </IconButton>
         <Box maxWidth="100%">
           <img
-            src={images[currentImageIndex]}
+            src={(matches ? imagesResponsive : images)[currentImageIndex]}
             alt={`Image ${currentImageIndex + 1}`}
             style={{ width: "100%" }}
           />
@@ -60,13 +63,12 @@ const Carousel = () => {
           }}
           onClick={nextImage}
         >
-          
           <KeyboardArrowRightIcon />
         </IconButton>
       </Stack>
       <Stack direction="row" spacing={1}>
         {images.map((_, index) => (
-          <Box key={index} sx={{ padding: '0.1rem' }}>
+          <Box key={index} sx={{ padding: "0.1rem" }}>
             <Typography
               component="span"
               style={{

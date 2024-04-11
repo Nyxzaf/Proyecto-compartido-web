@@ -9,27 +9,27 @@ import SixthContainer from "./SixthContainer.jsx";
 
 const Body = () => {
   return (
-      <Box sx={{ marginTop: "159px" }} >
-        <Carousel />
-        <Box sx={{marginTop:"10px"}}>
-            <FirstContainer/>
-        </Box>
-        <Box sx ={{marginTop:"45px"}}>
-            <SecondContainer/>
-        </Box>
-        <Box sx ={{marginTop:"45px"}}>
-            <Thirdcontainer/>
-        </Box>
-        <Box sx ={{marginTop:"-15px"}}>
-            <FourthContainer/>
-        </Box>
-        <Box sx ={{marginTop:"-15px"}}>
-            <FifthContainer/>
-        </Box>
-        <Box sx ={{marginTop:"-15px"}}>
-            <SixthContainer/>
-        </Box>
+    <Box>
+      <Carousel />
+      <Box mt={2}>
+        <FirstContainer />
       </Box>
+      <Box mt={3}>
+        <SecondContainer />
+      </Box>
+      <Box mt={3}>
+        <Thirdcontainer />
+      </Box>
+      <Box>
+        <FourthContainer />
+      </Box>
+      <Box>
+        <FifthContainer />
+      </Box>
+      <Box sx={{ marginTop: "-15px" }}>
+        <SixthContainer />
+      </Box>
+    </Box>
   );
 };
 

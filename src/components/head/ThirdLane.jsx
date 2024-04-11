@@ -32,7 +32,7 @@ const ThirdLane = () => {
     ]
 
     return (
-        <Stack direction="row" alignItems="center" bgcolor="#CB4335">
+        <Stack direction="row" alignItems="center" bgcolor="primary.main">
             <Grid item xs >
                 <Grid container direction={"row"} justifyContent="flex-start">
                     <Grid item p={1} xs={12}>
