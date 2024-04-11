@@ -29,7 +29,7 @@ const FirstLane = () => {
           {
             items.map((name,index) =>
           (
-            <Grid key={index} item fontFamily="Rubik" alignItems={"center"}  color="#e3bebf" href="#" className={"text"} sx={{textDecoration:"none"}} display={{ xs: 'none',md:"block" }}>
+            <Grid key={index} item fontFamily="Rubik" alignItems={"center"} color="#e3bebf" href="#" className={"text"} sx={{textDecoration:"none"}} display={{ xs: 'none',md:"block" }}>
               {name}
             </Grid>
           ))
