@@ -14,9 +14,7 @@ const FirstLane = () => {
     "RealPlaza",
     "Vivanda",
   ];
-  // (theme) => ({
-  //   backgroundColor: theme.typography.primary.dark,
-  // })
+
 
   return (
     <Stack
@@ -42,9 +40,9 @@ const FirstLane = () => {
           <Box
             key={index}
             component="a"
-            fontFamily="Rubik,sans-serif"
+            fontFamily={SECONDARY_FONT}
             fontSize={12}
-            color="#e3bebf"
+            color="secondary.pink"
             href="#"
             sx={{
               textDecoration: "none",

@@ -9,6 +9,7 @@ const theme = createTheme({
     },
     secondary: {
       main: "#CB4335",
+      pink:"#e3bebf"
     },
   },
 });

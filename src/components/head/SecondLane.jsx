@@ -1,4 +1,4 @@
-import { Grid, Stack } from "@mui/material"
+import { Box, Stack, Typography } from "@mui/material"
 import Logo from "../svg/LogoPlazaVea.svg";
 import SelectionList from "../head/SelectionList";
 import SearchList from "./SearchList";
@@ -11,8 +11,33 @@ import UserOptions from "./UserOptions";
 
 const SecondLane = () => {
   return (
-    <Stack bgcolor="primary.main" alignItems="center">
-      <Grid container alignItems="center" justifyContent="flex-start" wrap="nowrap">
+    <Stack gap={2} direction="row" bgcolor="primary.main" alignItems="center">
+      <Box pl={2}  display={{xs:"none",md:"block"}}>
+        <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">
+          <img  src={Logo}/>
+        </a>
+      </Box>
+      <Box display={{xs:"none",md:"block"}}>
+        <SelectionList/>
+      </Box>
+      <Box>
+        <SearchList/>
+      </Box>
+      <Box ml={"auto"} display={{xs:"none",md:"flex"}}  >
+        <IndeterminateCheckBoxIcon sx={{mr:1}}/>
+        <Typography>
+          Mis pedidos
+        </Typography>
+      </Box>
+      <Box ml={1} display={{xs:"none",md:"block"}}>
+        <UserOptions/>
+      </Box>
+      <Box mr={10} ml={2} display={{xs:"none",md:"block"}}>
+          <Badge badgeContent={100} color="secondary">
+            <ShoppingCartIcon sx={{fontSize:30}}/>
+          </Badge>
+      </Box>
+      {/* <Grid container alignItems="center" justifyContent="flex-start" wrap="nowrap">
         <Grid item  xl={1} p={1} pl={4} display={{xs:"none",md:"block"}}>
           <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">
             <img  src={Logo}/>
@@ -38,7 +63,7 @@ const SecondLane = () => {
               <ShoppingCartIcon sx={{fontSize:30}}/>
             </Badge>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Stack>
   )
 }
