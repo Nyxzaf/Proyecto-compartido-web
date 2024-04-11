@@ -8,8 +8,6 @@ const Carousel = () => {
   const images = [
     "./Imagen1.webp",
     "./Imagen2.webp",
-    "./Imagen3.jpg",
-    "./Imagen4.webp"
   ];
 
   const nextImage = () => {
