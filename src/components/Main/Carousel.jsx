@@ -60,6 +60,7 @@ const Carousel = () => {
           }}
           onClick={nextImage}
         >
+          
           <KeyboardArrowRightIcon />
         </IconButton>
       </Stack>
