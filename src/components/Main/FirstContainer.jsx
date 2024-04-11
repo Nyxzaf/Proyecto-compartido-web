@@ -20,7 +20,7 @@ const FirstContainer = () => {
     <Container>
       <Grid container spacing={5}>
         <Grid item xs={12} md={6}>
-          <Card sx={{ bgcolor: "#EBEBEB",boxShadow: "10", paddingLeft: '20px', paddingRight: '20px', maxWidth: '600px', margin: 'auto' }}>
+          <Card sx={{ bgcolor: "#EBEBEB",boxShadow: "10", paddingLeft: '5px', paddingRight: '5px', maxWidth: '600px' }}>
             <CardContent>
               <Typography variant="h5" component="h1"  sx={{ color: "#343333", fontWeight: 'bold', fontSize: '2rem' }}>
                 Supermercado
