@@ -40,7 +40,7 @@ const ThirdLane = () => {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item xs={8} container justifyContent="flex-end">
+            <Grid item xs={8} container justifyContent="flex-end" wrap="nowrap">
                 {
                     Item.map((item,index)=>
                         (
