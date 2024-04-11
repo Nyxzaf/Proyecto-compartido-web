@@ -11,7 +11,7 @@ import UserOptions from "./UserOptions";
 
 const SecondLane = () => {
   return (
-    <Stack bgcolor="#CB4335" alignItems="center">
+    <Stack bgcolor="primary.main" alignItems="center">
       <Grid container alignItems="center" justifyContent="flex-start" wrap="nowrap">
         <Grid item  xl={1} p={1} pl={4} display={{xs:"none",md:"block"}}>
           <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">

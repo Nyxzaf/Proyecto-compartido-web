@@ -5,7 +5,7 @@ const MainNavigation = () => {
 
     const [Open, setOpen] = useState(false);
 
-    const Category = ["supermercado", "tecnologia","ElectroHogar"
+    const Category = ["Supermercado", "Tecnologia","ElectroHogar"
     , "Muebles","Dormitorio","DecoHogar","Juguetes y Juegos","Deportes","Bebé E Infantil", "Moda Mujer","Moda Hombre","Moda Infantil","Zapatillas","Zapatos","Belleza"
     ,"Accesorios","Mascotas","Libreria y Oficina","Automotriz","Mejoramiento del Hogar","Marcas Aliadas","Perú Pasion"]
 

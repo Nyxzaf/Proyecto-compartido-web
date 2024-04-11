@@ -5,11 +5,11 @@ import ThirdLane from "./ThirdLane";
 
 const Header = () => {
   return (
-      <AppBar>
-        <FirstLane/>
-        <SecondLane/> 
-        <ThirdLane/>
-      </AppBar>
+    <AppBar sx={{ position: "sticky" }}>
+      <FirstLane />
+      <SecondLane />
+      <ThirdLane />
+    </AppBar>
   );
 };
 
