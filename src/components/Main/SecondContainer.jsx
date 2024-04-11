@@ -8,12 +8,12 @@ const SecondContainer = () => {
   return (
     <Container>
       {supermarketImages.map((imageUrl, index) => (
-        <Box key={index} component="figure">
+        <Box key={index} component="figure" mt={3} mb={0} >
           <Box
             component={"img"}
             src={imageUrl}
             alt={`Image ${index + 1}`}
-            sx={{ height: "auto", width: "100%" }}
+            sx={{ height: "auto", width: "100%",maxWidth:"100%" }}
           />
         </Box>
       ))}
