@@ -17,7 +17,7 @@ const FirstContainer = () => {
   ];
 
   return (
-    <Grid component="section" mt={1} container spacing={5}>
+    <Grid component="section" mt={1} container spacing={5} display={{xs:"none",sm:"block"}}>
       <Grid item xs={12} md={6}>
         <Card
           sx={(theme) =>({
