@@ -1,4 +1,4 @@
-import { Box , IconButton , Menu, MenuItem } from "@mui/material";
+import { Box , Drawer, IconButton , List, ListItem} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 const MainNavigation = () => {
@@ -15,7 +15,27 @@ const MainNavigation = () => {
             <IconButton onClick={()=>setOpen(!Open)} id="icon-menu" display={"flex"} sx={{fontFamily:"rubik" , borderRadius:"0px", color:"white"}} >
                 <MenuIcon/>Compra por categorias
             </IconButton>
-            <Menu  open={Open} onClose={()=>setOpen(!Open)}>
+            <Drawer
+            sx={{width:240,flexShrink:0}}
+            open={Open}
+            onClose={()=>setOpen(!Open)}
+            >
+                <Box>
+                    <List>
+                        {
+                            Category.map(c =>
+                                (
+                                    <ListItem key={c}>
+                                        {c}
+                                    </ListItem>
+                                )
+                            )
+                        }
+                    </List>
+                </Box>
+            </Drawer>
+
+            {/* <Menu  open={Open} onClose={()=>setOpen(!Open)}>
                 {
                     Category.map((item,index)=>
                 (   
@@ -24,7 +44,7 @@ const MainNavigation = () => {
                     </MenuItem>
                 ))
                 }
-            </Menu> 
+            </Menu> */}
         </Box>
     );
 }
