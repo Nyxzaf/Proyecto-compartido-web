@@ -17,10 +17,16 @@ const FirstContainer = () => {
   ];
 
   return (
-    <Grid component="section" mt={1} container spacing={5} display={{xs:"none",sm:"block"}}>
+    <Grid
+      component="section"
+      mt={1}
+      container
+      spacing={5}
+      display={{ xs: "none", sm: "flex" }}
+    >
       <Grid item xs={12} md={6}>
         <Card
-          sx={(theme) =>({
+          sx={(theme) => ({
             bgcolor: theme.palette.primary.card,
             boxShadow: "10",
             paddingLeft: "5px",
@@ -87,10 +93,10 @@ const FirstContainer = () => {
                         {index === 0
                           ? "Carnes, Aves, Pescados"
                           : index === 1
-                          ? "Abarrotes"
-                          : index === 2
-                          ? "Lácteos"
-                          : "Frutas y Verduras"}
+                            ? "Abarrotes"
+                            : index === 2
+                              ? "Lácteos"
+                              : "Frutas y Verduras"}
                       </Typography>
                     </div>
                   </div>
@@ -173,10 +179,10 @@ const FirstContainer = () => {
                       {index === 0
                         ? "Televisores"
                         : index === 1
-                        ? "Juguetes"
-                        : index === 2
-                        ? "Dormitorio"
-                        : "Linea Blanca"}
+                          ? "Juguetes"
+                          : index === 2
+                            ? "Dormitorio"
+                            : "Linea Blanca"}
                     </Typography>
                   </div>
                 </div>
