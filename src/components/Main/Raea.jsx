@@ -1,4 +1,13 @@
-import { Card, CardContent, Grid, Typography, Button, SwipeableDrawer, Box, Paper } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Grid,
+  Typography,
+  Button,
+  SwipeableDrawer,
+  Box,
+  Paper,
+} from "@mui/material";
 import { useState } from "react";
 
 const Raea = () => {
@@ -22,7 +31,13 @@ const Raea = () => {
   const [openDrawerElectro, setOpenDrawerElectro] = useState(false);
 
   return (
-    <Grid component="section" mt={1} container spacing={5} display={{xs:"block",sm:"none"}}>
+    <Grid
+      component="section"
+      mt={1}
+      container
+      spacing={5}
+      display={{ xs: "block", sm: "none" }}
+    >
       {/* Primera carta: Supermercado */}
       <Grid item xs={12} md={6}>
         <Card
@@ -37,11 +52,24 @@ const Raea = () => {
           <CardContent>
             {/* Parte superior: título, texto y botón */}
             <Box sx={{ marginBottom: 2 }}>
-              <Typography variant="h5" component="h1" sx={{ color: "#343333", fontWeight: "bold", fontSize: "2rem" }}>
+              <Typography
+                variant="h5"
+                component="h1"
+                sx={{ color: "#343333", fontWeight: "bold", fontSize: "2rem" }}
+              >
                 Supermercado
               </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <Typography variant="subtitle1" sx={{ color: "#343333", lineHeight: "1.4" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Typography
+                  variant="subtitle1"
+                  sx={{ color: "#343333", lineHeight: "1.4" }}
+                >
                   Compra de todo a precios bajos. Entregas el mismo día.
                 </Typography>
                 <Button
@@ -72,7 +100,11 @@ const Raea = () => {
                     <img
                       src={imageUrl}
                       alt={`Image ${index + 1}`}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
                     />
                   </Grid>
                 ))}
@@ -83,7 +115,8 @@ const Raea = () => {
                   color: "#343333", // Mismo color que el fondo de la carta
                   marginLeft: "10px", // Espaciado desde las imágenes
                   cursor: "pointer",
-                  textAlign: "right" // Alineación a la derecha
+                  textAlign: "right", // Alineación a la derecha
+                  fontWeight: "bold",
                 }}
                 onClick={() => setOpenDrawerSupermarket(true)}
               >
@@ -93,19 +126,23 @@ const Raea = () => {
 
             {/* SwipeableDrawer para las imágenes restantes */}
             <SwipeableDrawer
-              anchor="right"
+              anchor="bottom"
               open={openDrawerSupermarket}
               onClose={() => setOpenDrawerSupermarket(false)}
               onOpen={() => setOpenDrawerSupermarket(true)}
             >
               <CardContent>
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                   {supermarketImages.map((imageUrl, index) => (
-                    <Grid key={index} item xs={6}>
+                    <Grid key={index} item xs={4}>
                       <img
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        style={{
+                          width: "100px",
+                          height: "100px",
+                          objectFit: "cover",
+                        }}
                       />
                     </Grid>
                   ))}
@@ -130,12 +167,26 @@ const Raea = () => {
           <CardContent>
             {/* Parte superior: título, texto y botón */}
             <Box sx={{ marginBottom: 2 }}>
-              <Typography variant="h5" component="h1" sx={{ color: "#343333", fontWeight: "bold", fontSize: "2rem" }}>
+              <Typography
+                variant="h5"
+                component="h1"
+                sx={{ color: "#343333", fontWeight: "bold", fontSize: "2rem" }}
+              >
                 Electro, hogar y más
               </Typography>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <Typography variant="subtitle1" sx={{ color: "#343333", lineHeight: "1.4" }}>
-                  Lo último en tecnología, electrohogar, deportes, moda, infantil y más. Entregas desde 24 hrs.
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Typography
+                  variant="subtitle1"
+                  sx={{ color: "#343333", lineHeight: "1.4" }}
+                >
+                  Lo último en tecnología, electrohogar, deportes, moda,
+                  infantil y más. Entregas desde 24 hrs.
                 </Typography>
                 <Button
                   variant="contained"
@@ -165,7 +216,11 @@ const Raea = () => {
                     <img
                       src={imageUrl}
                       alt={`Image ${index + 1}`}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
                     />
                   </Grid>
                 ))}
@@ -176,7 +231,8 @@ const Raea = () => {
                   color: "#343333", // Mismo color que el fondo de la carta
                   marginLeft: "10px", // Espaciado desde las imágenes
                   cursor: "pointer",
-                  textAlign: "right" // Alineación a la derecha
+                  textAlign: "right", // Alineación a la derecha
+                  fontWeight: "bold",
                 }}
                 onClick={() => setOpenDrawerElectro(true)}
               >
@@ -186,19 +242,23 @@ const Raea = () => {
 
             {/* SwipeableDrawer para las imágenes restantes */}
             <SwipeableDrawer
-              anchor="right"
+              anchor="bottom"
               open={openDrawerElectro}
               onClose={() => setOpenDrawerElectro(false)}
               onOpen={() => setOpenDrawerElectro(true)}
             >
               <CardContent>
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                   {electroImages.map((imageUrl, index) => (
-                    <Grid key={index} item xs={6}>
+                    <Grid key={index} item xs={4}>
                       <img
                         src={imageUrl}
                         alt={`Image ${index + 1}`}
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                        style={{
+                          width: "100px",
+                          height: "100px",
+                          objectFit: "cover",
+                        }}
                       />
                     </Grid>
                   ))}
